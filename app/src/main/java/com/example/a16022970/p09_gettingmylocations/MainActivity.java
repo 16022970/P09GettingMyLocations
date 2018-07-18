@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                     ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 0);
                 }
-                
+
                 Intent i = new Intent(MainActivity.this, MyService.class);
                 startService(i);
             }
